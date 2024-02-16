@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --lg-font: "Kaisei Tokumin", serif;
+    --sm-font: "Poppins", sans-serif;
+    --pink:#e5345b;
+}
+body{
+    font-family:var(--sm-font);
+}
+/* button */
+.bg-primary{
+    background-color:var(--pink)!important;
+
+}
+.navbtns button{
+    border:none !important;
+}
+.btn:not(.nav-btns button){
+    background:white;
+    color:rgb(85,85,85);
+    padding:10px 28px;
+    border-radius:40px;
+    border:1px solid rgb(85,85,85);
+}
+.btn:not(.nav-btns button):hover{
+    background:var(--pink);
+    color:#fff;
+    border-color:var(--pink);
+}
+/* navbar */
+.navbar{
+    box-shadow:0 3px 9px 3px rgba(0,0,0,.3);
+}
+.navbar-brand img{
+    width:30px;
+}
+.navbar-brand span{
+    letter-spacing:2px;
+    font-family:var(--lg-font);
+}
+.nav-link:hover{
+    color:var(--pink)!important;
+}
+#header{
+    background:url(../images/banner-img-1.jpg) top/cover no-repeat;
+    padding-top:104px;
+}
+.carousel-inner h1{
+    font-size:60px;
+    font-family:var(--lg-font);
+}
+/* collection */
+#collection .row button{
+   text-transform:capitalize;
+    margin:0 10px;
+    font-size:18px;
+    border-color:black;
+    color:black;
+}
+#collection .row button:hover{
+    color:white;
+    border-color:var(--pink);
+}
+/* card */
+#collection .sale{
+    border:none;
+}
+
+#collection .sale img{
+    position:relative;
+
+}
+#collection .sale h4{
+    font-size:1rem;
+    font-weight:400;
+    color: #212529;
+}
+#collection .sale  span{
+    
+   background:var(--pink);
+   color:#fff;
+    position:absolute;
+   padding:9px;
+    top:20px;
+    right:37px;
+}
+/* special */
+#specials .sale{
+    border:none;
+}
+#specials .sale h4{
+    font-size:1rem;
+    font-weight:400;
+    color: #212529;
+}
+#specials .sale img{
+    position:relative;
+
+}
+#specials .sale  span{
+    
+    color:var(--pink);
+    position:absolute;
+    padding:9px;
+     top:10px;
+     right:20px;
+ }
+ #specials .sale  span i{
+    font-size:1.5rem;
+ }
+ /* discount section */
+ .discount{
+    height:27rem;
+    background:url(../images/offer_img.jpg) 11% 50%/cover  no-repeat;
+    
+    padding-top:190px;
+ }
+ #aboutus h2::before{
+    content:'';
+    width:5px;
+    height:50px;
+    border:2px solid red;
+    margin-right:10px;
+ }
+ 
+ .discount h1{
+    font-family:var(--lg-font);
+    font-size:4rem;
+    margin-bottom:1.5rem;
+
+ }
+ .discount button{
+    text-transform:capitalize;
+    border:none !important;
+ }
+ /* our blogs */
+ #blogs h4{
+    width:100%;
+    font-size:1.4rem;
+ }
+ #blogs p,span{
+    color:rgba(50,50,50,0.59);
+    font-size:15.5px;
+    font-weight:450;
+ }
+ #blogs button{
+    margin:1rem 0;
+ }
+ /* about us */
+ /* popular */
+ #popular h2::before{
+    content:'';
+    width:5px;
+    height:50px;
+    border:2px solid red;
+    margin-right:10px;
+ }
+ /* news */
+ #newsletter  h2::before{
+    content:'';
+    width:5px;
+    height:50px;
+    border:2px solid red;
+    margin-right:10px;
+ }
+#newsletter p{
+   max-width:600px;
+    font-size:17px;
+    color:rgba(50,50,50,0.7);
+ }
+ #newsletter .input-group {
+     max-width:550px;
+  
+
+ }
+ #newsletter .input-group input{
+       border-top-left-radius:25px;
+     border-bottom-left-radius:25px;
+ }
+ #newsletter .input-group input::placeholder{
+    text-transform:capitalize;
+ }
+ #newsletter .input-group button{
+    background:var(--pink);
+    border:none;
+    color:#fff;
+ }
+ #newsletter .input-group button:hover{
+    background:black;
+ }
+ /* footer */
+footer a:hover{
+    color:var(--pink)!important;
+ }
+ footer a{
+    transition:color 0.3s ease;
+ }
